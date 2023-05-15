@@ -13,7 +13,7 @@ const browsersync = require("browser-sync").create();
 
 // Sass Task
 function scssTask() {
-  return src("app/scss/style.scss", { sourcemaps: true })
+  return src("src/scss/style.scss", { sourcemaps: true })
     .pipe(sass())
     .pipe(postcss([autoprefixer(), cssnano()])) //autoprefixer adds vendor prefixes to css properties for older browsers and cssnano minifies the css file
     .pipe(dest("dist", { sourcemaps: "." }));
@@ -21,7 +21,7 @@ function scssTask() {
 
 // JavaScript Task
 function jsTask() {
-  return src("app/js/script.js", { sourcemaps: true })
+  return src("src/js/script.js", { sourcemaps: true })
     .pipe(babel({ presets: ["@babel/preset-env"] })) //babel makes the code compatible with older browsers
     .pipe(terser())
     .pipe(dest("dist", { sourcemaps: "." }));
@@ -51,7 +51,7 @@ function browserSyncReload(cb) {
 function watchTask() {
   watch("*.html", browserSyncReload);
   watch(
-    ["app/scss/**/*.scss", "app/**/*.js"],
+    ["src/scss/**/*.scss", "src/**/*.js"],
     series(scssTask, jsTask, browserSyncReload)
   );
 }
