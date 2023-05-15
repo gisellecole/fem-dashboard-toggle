@@ -1,7 +1,11 @@
+@use "../partials" as *;
 footer {
-  font-size: 11px;
+  font-size: rem(11);
   text-align: center;
   & a {
     color: hsl(228, 45%, 44%);
+  }
+  @include breakpoint(medium) {
+    font-size: rem(13);
   }
 }

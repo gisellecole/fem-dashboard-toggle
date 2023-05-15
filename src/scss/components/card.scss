@@ -3,17 +3,30 @@
 .cards {
   display: grid;
   grid-template-columns: 1fr;
-  gap: rem(30);
+  row-gap: rem(24);
+  margin-top: rem(-48);
 
   @include breakpoint(medium) {
     grid-template-columns: repeat(2, 1fr);
+    gap: rem(30);
+    margin-top: rem(-105);
   }
 
   @include breakpoint(large) {
     grid-template-columns: repeat(4, 1fr);
+    column-gap: rem(30);
+    margin-bottom: rem(40);
   }
 }
 
+div#overview-list {
+  gap: rem(16);
+  @include breakpoint(medium) {
+    padding-top: rem(30);
+    row-gap: rem(24);
+    column-gap: rem(30);
+  }
+}
 .card {
   position: relative;
   overflow: hidden;

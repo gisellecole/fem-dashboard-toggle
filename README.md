@@ -6,6 +6,7 @@ This is a solution to the [Social media dashboard with theme switcher challenge 
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
+  - [ScreenShot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -27,9 +28,20 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Toggle color theme to their preference
 
+### ScreenShot
+
+- Deskotp Light Mode
+  ![Desktop Light Mode](./images/desktop-light-mode.png)
+- Deskotp Dark Mode
+  ![Desktop Dark Mode](./images/desktop-dark-mode.png)
+- Tablet Dark Mode
+  ![Tablet Dark Mode](./images/tablet-dark-mode.png)
+- Mobile Dark Mode
+  ![Mobile Dark Mode](./images/mobile-dark-mode.png)
+
 ### Links
 
-- Solution URL: [Git-Repo](https://your-solution-url.com)
+- Solution URL: [Git-Repo](https://github.com/gisellecole/fem-dashboard-toggle)
 - Live Site URL: [Git-Page Live Site](https://your-live-site-url.com)
 
 ## My process

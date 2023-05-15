@@ -3,18 +3,25 @@
 .header {
   display: flex;
   flex-wrap: wrap;
-  margin-top: rem(36);
+  padding-top: rem(36);
+  height: rem(235);
+  border-radius: 0 0 rem(20) rem(20);
+  margin-bottom: 0;
 
   @include breakpoint(medium) {
+    height: rem(244);
+    padding-top: rem(25);
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
   }
 
   &__title {
     width: 100%;
-
+    height: fit-content;
+    padding-bottom: rem(20);
     @include breakpoint(medium) {
       width: auto;
+      border-bottom: rem(0);
     }
   }
 

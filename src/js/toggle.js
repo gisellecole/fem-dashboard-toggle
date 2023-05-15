@@ -4,11 +4,15 @@ export function initializeColorMode() {
 
   const setDarkMode = () => {
     document.querySelector("body").classList = "dark";
+    document.querySelector("header").classList = "header container";
+    document.querySelector(".header__title").classList = "header__title";
     localStorage.setItem("colorMode", "dark");
   };
 
   const setLightMode = () => {
     document.querySelector("body").classList = "light";
+    document.querySelector("header").classList = "header container";
+    document.querySelector(".header__title").classList = "header__title";
     localStorage.setItem("colorMode", "light");
   };
 
