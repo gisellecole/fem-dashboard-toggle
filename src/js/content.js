@@ -28,7 +28,7 @@ export class ContentGenerator {
     card.classList.add("card", `card--${platform}`);
     card.innerHTML = `
       <div class="card__platform">
-        <img class="card__icon" src="/images/icon-${platform}.svg" alt=${social} />
+        <img class="card__icon" src="./src/images/icon-${platform}.svg" alt=${social} />
         <div class="card__username">${username}</div>
       </div>
       <div class="card__followers">
@@ -36,7 +36,7 @@ export class ContentGenerator {
         <div class="card__label">${label}</div>
       </div>
       <div class="card__change card__change--${sign}">
-        <img src="/images/icon-${sign}.svg" alt="${sign} arrow" />
+        <img src="./src/images/icon-${sign}.svg" alt="${sign} arrow" />
         <div class="card__number">${number} Today</div>
       </div>
     `;

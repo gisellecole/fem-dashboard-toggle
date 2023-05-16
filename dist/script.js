@@ -1,2 +1,0 @@
-"use strict";var _toggle=require("./toggle.js"),_content=require("./content.js"),_overview=require("./overview.js");window.addEventListener("load",(function(){(0,_toggle.initializeColorMode)(),(new _content.ContentGenerator).setPageContent(),(new _overview.OverviewGenerator).setOverviewsContent()}));
-//# sourceMappingURL=script.js.map

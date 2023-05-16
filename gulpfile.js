@@ -4,27 +4,14 @@ const sass = require("gulp-sass")(require("sass"));
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const cssnano = require("cssnano");
-const babel = require("gulp-babel");
-const terser = require("gulp-terser");
 const browsersync = require("browser-sync").create();
-
-// Use dart-sass for @use
-//sass.compiler = require('dart-sass');
 
 // Sass Task
 function scssTask() {
-  return src("src/scss/style.scss", { sourcemaps: true })
+  return src("src/scss/style.scss")
     .pipe(sass())
-    .pipe(postcss([autoprefixer(), cssnano()])) //autoprefixer adds vendor prefixes to css properties for older browsers and cssnano minifies the css file
-    .pipe(dest("dist", { sourcemaps: "." }));
-}
-
-// JavaScript Task
-function jsTask() {
-  return src("src/js/script.js", { sourcemaps: true })
-    .pipe(babel({ presets: ["@babel/preset-env"] })) //babel makes the code compatible with older browsers
-    .pipe(terser())
-    .pipe(dest("dist", { sourcemaps: "." }));
+    .pipe(postcss([autoprefixer(), cssnano()]))
+    .pipe(dest("src/css"));
 }
 
 // Browsersync
@@ -40,8 +27,9 @@ function browserSyncServe(cb) {
       },
     },
   });
-  cb(); //callback function
+  cb();
 }
+
 function browserSyncReload(cb) {
   browsersync.reload();
   cb();
@@ -50,14 +38,11 @@ function browserSyncReload(cb) {
 // Watch Task
 function watchTask() {
   watch("*.html", browserSyncReload);
-  watch(
-    ["src/scss/**/*.scss", "src/**/*.js"],
-    series(scssTask, jsTask, browserSyncReload)
-  );
+  watch(["src/scss/**/*.scss"], series(scssTask, browserSyncReload));
 }
 
 // Default Gulp Task
-exports.default = series(scssTask, jsTask, browserSyncServe, watchTask);
+exports.default = series(scssTask, browserSyncServe, watchTask);
 
 // Build Gulp Task
-exports.build = series(scssTask, jsTask);
+exports.build = series(scssTask);

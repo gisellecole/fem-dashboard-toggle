@@ -16,10 +16,10 @@ export class OverviewGenerator {
     card.classList.add("card", "card-grid");
     card.innerHTML = `
       <div class="card__subtitle">${title}</div>
-      <img class="" src="/images/icon-${social}.svg" alt="${network}" />
+      <img class="" src="./src/images/icon-${social}.svg" alt="${network}" />
       <div class="card__count card__count--small">${count}</div>
       <div class="card__change card__change--${sign}">
-        <img src="/images/icon-${sign}.svg" alt="${sign} arrow" />
+        <img src="./src/images/icon-${sign}.svg" alt="${sign} arrow" />
         <div class="card__number">${perc}%</div>
       </div>
     `;

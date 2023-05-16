@@ -15,6 +15,7 @@ This is a solution to the [Social media dashboard with theme switcher challenge 
   - [JavaScript Code: OverviewGenerator](#javascript-code-overviewgenerator)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
+  - [Dependecies Installed](#dependecies-installed)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -111,6 +112,14 @@ I learned a lot while working on this project, including:
 ### Continued development
 
 I want to continue focusing on learning more about JavaScript and its various APIs. I also want to continue improving my CSS skills, especially with regards to layout and animation.
+
+### Dependecies Installed
+
+- first: `npm install gulp-cli -g`
+- then: `npm init -y `
+- to create package-lock.json: `npm install  @babel/core @babel/preset-env postcss autoprefixer browser-sync cssnano dart-sass gulp gulp-babel gulp-postcss gulp-sass gulp-terser `
+- install sass: `npm install sass`
+- install gulp-sass: `npm install gulp-sass --save-dev`
 
 ### Useful resources
 
