@@ -32,13 +32,13 @@ Users should be able to:
 ### ScreenShot
 
 - Deskotp Light Mode
-  ![Desktop Light Mode](./images/desktop-light-mode.png)
+  ![Desktop Light Mode](./src/images/desktop-light-mode.png)
 - Deskotp Dark Mode
-  ![Desktop Dark Mode](./images/desktop-dark-mode.png)
+  ![Desktop Dark Mode](./src/images/desktop-dark-mode.png)
 - Tablet Dark Mode
-  ![Tablet Dark Mode](./images/tablet-dark-mode.png)
+  ![Tablet Dark Mode](./src/images/tablet-dark-mode.png)
 - Mobile Dark Mode
-  ![Mobile Dark Mode](./images/mobile-dark-mode.png)
+  ![Mobile Dark Mode](./src/images/mobile-dark-mode.png)
 
 ### Links
 
