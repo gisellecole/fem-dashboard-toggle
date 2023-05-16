@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Social media dashboard with theme switcher</title>
+  <link rel="stylesheet" href="./dist/style.css">
+  <script src="https://kit.fontawesome.com/a88eb1eed3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="header container light">
+    <div class="header__title light">
+      <h1>Social Media Dashboard</h1>
+      <span class="header__subtitle">Total Followers: 23,004</span>
+    </div>
+    <fieldset class="header__toggle toggle" aria-label="theme toggle" role="radiogroup">
+      <label for="dark">Dark Mode <span class="visually-hidden">On</span></label>
+      <div class="toggle__wrapper">
+        <input type="radio" name="theme" id="dark" />
+        <input type="radio" name="theme" id="light" />
+        <span aria-hidden="true" class="toggle__background"></span>
+        <span aria-hidden="true" class="toggle__button"></span>
+      </div>
+      <label for="light" class="visually-hidden">Dark Mode Off</label>
+    </fieldset>
+  </header>
+  <main>
+    <section class="container cards" id="profiles-list">
+      <!-- the profile cards load from content.js here-->
+    </section>
+    <section class="container overview">
+      <h2>Overview - Today</h2>
+      <div class="cards" id="overview-list">
+        <!-- the overview cards load from overview.js here-->
+      </div>
+    </section>
+  </main>
+  <footer class="attribution">
+    <p>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <i class="fa-solid fa-heart fa-beat fa-xs" style="color:var(--brightred)"></i> <a
+        href="https://www.frontendmentor.io/profile/gisellecole">Giselle Cole</a>.
+    </p>
+  </footer>
+  <script src="/src/js/content.js" type="module"></script> <!-- generate profile content -->
+  <script src="/src/js/overview.js" type="module"></script><!-- generate overview -->
+  <script src="/src/js/toggle.js" type="module"></script><!-- dark/light mode-->
+  <script src="/src/js/script.js" type="module"></script><!-- load js script-->
+</body>
+
+</html>

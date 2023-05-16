@@ -1,0 +1,27 @@
+@use "../partials/" as *;
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  line-height: 1.1;
+}
+h1 {
+  font-size: rem(24);
+  margin-bottom: rem(7);
+  @include breakpoint(large) {
+    font-size: rem(28);
+  }
+}
+.overview h2 {
+  padding-bottom: rem(54);
+  @include breakpoint(medium) {
+    margin: 0;
+    padding-bottom: rem(100);
+  }
+}
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
