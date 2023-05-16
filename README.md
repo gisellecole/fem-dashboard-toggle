@@ -42,7 +42,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Git-Repo](https://github.com/gisellecole/fem-dashboard-toggle)
-- Live Site URL: [Git-Page Live Site](https://your-live-site-url.com)
+- Live Site URL: [Git-Page Live Site](https://gisellecole.github.io/fem-dashboard-toggle/)
 
 ## My process
 
