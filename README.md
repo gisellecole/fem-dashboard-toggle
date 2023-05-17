@@ -59,7 +59,7 @@ Users should be able to:
 ### Project Structure
 
 - `index.html`: The main HTML file that renders the social media dashboard.
-- `dist/style.css`: The compiled CSS file from SCSS.
+- `src/css/style.css`: The compiled CSS file from SCSS.
 - `src/scss`: Contains the SCSS files for styling the dashboard.
 - `src/js/content.js`: Loads the profile content.
 - `src/js/overview.js`: Loads the overview.
