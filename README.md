@@ -78,7 +78,7 @@ The `ContentGenerator` class defined in `src/js/content.js` has the following fe
 
 To use this code, an instance of the `ContentGenerator` class is created, and the `setPageContent` method is called to generate and display the content cards.
 
-**Note:** The JavaScript code is designed to be executed within a web browser environment and interacts with the DOM using methods such as `document.createElement` and
+**Note:** The JavaScript code is designed to be executed within a web browser environment and interacts with the DOM using methods such as `document.createElement` and `appendChild`. It is intended to be executed within a web browser environment.
 
 ## JavaScript Code: OverviewGenerator
 
