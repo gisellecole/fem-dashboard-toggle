@@ -125,7 +125,7 @@ I want to continue focusing on learning more about JavaScript and its various AP
 
 - [What HTML markup (accessible) ](https://scottaohara.github.io/a11y_styled_form_controls/src/radio-button--switch/).
 - [Switching between light/dark modes via JS and Prefers-color-scheme media query](https://piccalil.li/tutorial/create-a-user-controlled-dark-or-light-mode/).
-- [nclusive Components book ](https://inclusive-components.design/cards/).
+- [Inclusive Components book ](https://inclusive-components.design/cards/).
 
 ## Author
 
