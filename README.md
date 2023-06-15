@@ -117,7 +117,7 @@ I want to continue focusing on learning more about JavaScript and its various AP
 
 - first: `npm install gulp-cli -g`
 - then: `npm init -y `
-- to create package-lock.json: `npm install  @babel/core @babel/preset-env postcss autoprefixer browser-sync cssnano dart-sass gulp gulp-babel gulp-postcss gulp-sass gulp-terser `
+- to create package.json: `npm install  @babel/core @babel/preset-env postcss autoprefixer browser-sync cssnano dart-sass gulp gulp-babel gulp-postcss gulp-sass gulp-terser `
 - install sass: `npm install sass`
 - install gulp-sass: `npm install gulp-sass --save-dev`
 
